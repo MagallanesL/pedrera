@@ -1,0 +1,141 @@
+body {
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(to right,
+    #FF87A7, 
+    #E0A9F5);
+  background-size: 200% 200%;
+  animation: gradient 4s ease infinite;
+  }
+
+h1{ color: pink;}
+
+  p{ color: pink;
+  font-size: 20px;}
+  
+  .container {
+    width: 200px;
+    height: 70px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 50px auto;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
+  
+  }
+
+    
+  
+  #container1, #container2 {
+    background-color: #d612d69d;
+    padding: 20px;
+    border-radius: 10px;
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    margin: 50px auto;
+    position: relative;
+  }
+
+  #container1 img, #container3 img, #container5 img, #container7 img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+  }
+  
+  #container2 img, #container4 img, #container6 img, #container8 img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  #container1 .number-decoration {
+    right: 20px;
+    top: 20px;
+  }
+
+  #container3 .number-decoration {
+    right: 20px;
+    top: 20px;
+  }
+  
+  #container5 .number-decoration {
+    right: 20px;
+    top: 20px;
+  }
+
+  #container7 .number-decoration {
+    right: 20px;
+    top: 20px;
+  }
+
+  #container2 .number-decoration {
+    left: 20px;
+    top: 20px;
+  }
+
+  #container4 .number-decoration {
+    left: 20px;
+    top: 20px;
+  }
+  #container6 .number-decoration {
+    left: 20px;
+    top: 20px;
+  }
+  #container8 .number-decoration {
+    left: 20px;
+    top: 20px;
+  }
+  
+  .number-decoration {
+    display: inline-block;
+    background-color: rgba(9, 240, 163, 0.836);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+    position: absolute;
+  }
+
+  
+[id^="container"] {
+    background-color: #d612d69d;
+    padding: 20px;
+    border-radius: 10px;
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    margin: 50px auto;
+    position: relative;
+  }
+  
+  @media (max-width: 768px) {
+    #container1, #container2 {
+      width: 80%;
+      height: auto;
+    }
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
